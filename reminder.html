@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reminder To-Do Tool</title>
+  <title>Reminder Tool</title>
   <link rel="stylesheet" href="reminder.css">
 </head>
 <body>
   <div class="container">
-    <h1>📝 Reminder To-Do Tool</h1>
+    <h1>📝 Reminder Tool</h1>
 
-    <!-- Input and Button -->
-    <div class="input-section">
-      <input type="text" id="reminderInput" placeholder="Enter a reminder...">
-      <button id="addBtn">Add</button>
+    <!-- Reminder Section -->
+    <div class="section">
+      <h2>Reminders</h2>
+      <div class="input-section">
+        <input type="text" id="reminderInput" placeholder="Enter a reminder...">
+        <input type="datetime-local" id="reminderDateTime">
+        <button id="addBtn">Add</button>
+        <button id="clearAllBtn" class="clear">Clear All</button>
+      </div>
+      <ul id="reminderList"></ul>
     </div>
-
-    <!-- Reminder List -->
-    <ul id="reminderList"></ul>
   </div>
-<!-- need to add timer or calendar reminder for days -->
-
 
   <script src="reminder.js"></script>
 </body>

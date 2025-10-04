@@ -1,64 +1,66 @@
-/* General Page Styling */
 body {
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
+  background: #f4f4f9;
   margin: 0;
-  padding-top: 50px;
+  padding: 20px;
 }
 
 .container {
-  background: white;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
   padding: 20px;
-  border-radius: 12px;
-  width: 300px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h1, h2 {
   text-align: center;
 }
 
-h1 {
+.input-section {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
-/* Input Section */
-.input-section {
-  display: flex;
-  gap: 5px;
+input, button {
+  padding: 10px;
+  font-size: 14px;
 }
 
-#reminderInput {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
 #addBtn {
-  background: #28a745;
+  background: #007bff;
   color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 #addBtn:hover {
-  background: #218838;
+  background: #0056b3;
 }
 
-/* Reminder List */
+.clear {
+  background: #dc3545;
+  color: white;
+}
+
+.clear:hover {
+  background: #a71d2a;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 20px;
 }
 
 li {
-  background: #f9f9f9;
-  margin: 8px 0;
+  background: #f1f1f1;
+  margin: 5px 0;
   padding: 10px;
   border-radius: 6px;
   display: flex;
@@ -66,15 +68,15 @@ li {
   align-items: center;
 }
 
-li button {
+.delete-btn {
   background: #dc3545;
   color: white;
   border: none;
+  border-radius: 5px;
   padding: 5px 8px;
-  border-radius: 6px;
   cursor: pointer;
 }
 
-li button:hover {
-  background: #c82333;
+.delete-btn:hover {
+  background: #a71d2a;
 }
